@@ -9,8 +9,8 @@ client.on('message', message => {
     if (message.content === '!ping') {
     	message.reply('pong');
   	}
-    if (message.content === '!roue'){
-message.guild.member(args.member.id);}
+if (fromID === me && text.includes("!say") ) { 
+    bot.sendMessage({ to: channel, message: txt.replace('!say ','') }); }
     
 if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
