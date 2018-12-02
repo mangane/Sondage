@@ -7,16 +7,16 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!ping') {
-    	message.reply('**pong!**');
+    	message.reply("**pong!**");
   	}
     if (message.content === 'pute') {
         message.reply('attention à ton vocabulaire');
     }
     if (message.content === 'salope') {
-        message.reply('parle sur un autre ton dis donc :thumbsdown:');
+        message.reply("parle sur un autre ton dis donc :thumbsdown:");
     }  
     if (message.content === '!info') {
-        message.channel.sendMessage('__information sur le bot :__');
+        message.channel.sendMessage("__information sur le bot :__");
     }
 });
 
