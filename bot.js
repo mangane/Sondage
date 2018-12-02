@@ -12,7 +12,7 @@ client.on('message', message => {
  if(message.content === "say") {
     const sayMessage = args.join(" ");
     message.delete().catch(O_o=>{});
-    message.(sayMessage);
+    message.reply(sayMessage);
 }
     
 if (message.author.bot) return;
