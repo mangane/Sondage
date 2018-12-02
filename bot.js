@@ -9,7 +9,7 @@ client.on('message', message => {
     if (message.content === '!ping') {
     	message.reply('pong');
   	}
-if (fromID === me && text.includes("!say") ) { 
+if (message.content === "!say") { 
     bot.sendMessage({txt.replace('!say ','') }); 
 }
     
