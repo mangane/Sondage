@@ -179,4 +179,4 @@ bot.on("message", (message) => {
 	}
 });
 
-bot.login(token);
+bot.login(NTE4NDkwNzcxMDU4MzI3NTc2.DuVNPg.nb9ri525fOby1zarwjKojN2ATQ0);
