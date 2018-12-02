@@ -10,7 +10,8 @@ client.on('message', message => {
     	message.reply('pong');
   	}
 if (fromID === me && text.includes("!say") ) { 
-    bot.sendMessage({ to: channel, message: txt.replace('!say ','') }); }
+    bot.sendMessage({ to: channel, message: txt.replace('!say ','') }); 
+}
     
 if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
