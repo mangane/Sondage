@@ -9,7 +9,7 @@ client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
   	}
-    if (message.content=== 'test') {
+    if (message.content === 'test') {
         message.reply${cmd.args.join('');}
     }                  
 });
