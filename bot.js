@@ -9,8 +9,8 @@ client.on('message', message => {
     if (message.content === '!ping') {
     	message.reply('pong');
   	}
-    if (message.content === '!roue'''){
-        message.reply(message.content);}
+    if (message.content === '!roue'){
+        message.reply(message.content');}
 
 });
 
