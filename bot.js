@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.reply('**pong!**');
   	}
     if (message.content === 'test') {
-        message.reply($1);}
+        message.reply($1);
     }                  
 });
 
