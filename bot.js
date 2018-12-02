@@ -23,6 +23,9 @@ module.exports = {
   description,
   execute,
 }
+    if (message.content=== 'test') {
+        message.reply${cmd.args.join('');}
+    }                  
 });
 
 // THIS  MUST  BE  THIS  WAY
