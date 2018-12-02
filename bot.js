@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.reply('pong');
   	}
     if (message.content === '!roue'){
-        message.reply(message.content');}
+        message.reply(message.content'');}
 
 });
 
