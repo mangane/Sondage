@@ -9,8 +9,8 @@ client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('**pong!**');
   	}
-    if (message.content === '!voca') {
-        message.channel.send('attention a ton vocabulaire {@user}');
+    if (message.content === 'pute') {
+        message.reply('attention a ton vocabulaire');
     }  
 });
 
