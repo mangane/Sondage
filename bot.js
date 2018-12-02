@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.reply('pong');
   	}
 if (message.content === "!say") { 
-    bot.sendMessage({txt.replace('!say ','') }); 
+    message.reply('!say ','');
 }
     
 if (message.author.bot) return;
