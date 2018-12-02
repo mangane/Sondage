@@ -11,12 +11,11 @@ client.on('message', message => {
   	}
     if (message.content === 'pute') {
         message.reply('attention à ton vocabulaire');
-if (message.channel.type == 'text') {
-        message.channel.fetchMessages()
-          .then(messages => {
-            message.channel.bulkDelete(messages);
-messagesDeleted = messages.array(1).length; 
+    }
+    if (message.content === 'salope') {
+        message.reply('parle sur un autre ton dis donc :-1:');
     }  
+    
 });
 
 // THIS  MUST  BE  THIS  WAY
