@@ -14,8 +14,7 @@ client.on('message', message => {
     message.delete().catch(O_o=>{});
     message.reply(sayMessage);
 }
-    
-bot.on("message", (message) => {
+ {
 	
 	/*
 		Object message :
