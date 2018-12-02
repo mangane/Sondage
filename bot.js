@@ -10,14 +10,14 @@ client.on('message', message => {
     if (message.content === '!ping') {
     	message.reply("**pong!**");
   	}
-    if (message.content === "+pute+") {
+    if (message.content === "pute") {
         message.reply('attention à ton vocabulaire');
     }
     if (message.content === 'salope') {
         message.reply("parle sur un autre ton dis donc :thumbsdown:");
     }  
     if (message.content === '!info') {
-        message.channel.sendMessage("__information sur le bot :__");
+        message.channel.sendMessage("```information sur le bot :``` Bonjour/bonsoir je m'appel ``Protecteur`` Je suis un bot qui va demander aux personnes sur votres serveurs qui parle mal de parler mieux ```mon créateur c'est : ``` Bonne journée/rsoiée :)");
     }
 });
 
