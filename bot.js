@@ -9,8 +9,10 @@ client.on('message', message => {
     if (message.content === '!ping') {
     	message.reply('pong');
   	}
-if (message.content === "!say") { 
-    message.reply('!say ','');
+ if(message.content === "say") {
+    const sayMessage = args.join(" ");
+    message.delete().catch(O_o=>{});
+    message.channel.send(sayMessage);
 }
     
 if (message.author.bot) return;
