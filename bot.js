@@ -16,7 +16,7 @@ client.on('message', message => {
         message.reply("parle sur un autre ton dis donc :thumbsdown:");
     }  
     if (message.content === '!info') {
-        message.channel.sendMessage("__information sur le bot :__");
+        message.channel.sendMessage("__information sur le bot :__");..
     }
 });
 
