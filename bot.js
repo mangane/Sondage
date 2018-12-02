@@ -13,9 +13,11 @@ client.on('message', message => {
         message.reply('attention à ton vocabulaire');
     }
     if (message.content === 'salope') {
-        message.reply('parle sur un autre ton dis donc :-1:');
+        message.reply('parle sur un autre ton dis donc :thumbsdown:');
     }  
-    
+    if (message.content === '!info') {
+        message.channel.sendMessage('__information sur le bot :__');
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
