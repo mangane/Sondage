@@ -17,7 +17,7 @@ client.on('message', message => {
         message.reply("parle sur un autre ton dis donc :thumbsdown:");
     }  
     if (message.content === '!info') {
-        message.channel.sendMessage("```information sur le bot :``` Bonjour/bonsoir je m'appel ``Protecteur`` Je suis un bot qui va demander aux personnes sur votres serveurs qui parle mal de parler mieux ```mon créateur c'est : ``` Bonne journée/rsoiée :)");
+        message.channel.sendMessage("```information sur le bot :``` Bonjour/bonsoir je m'appel ``Protecteur`` Je suis un bot qui va demander aux personnes sur votres serveurs qui parle mal de parler mieux ```mon créateur c'est : ``` ``j'allais oublier ma version : V1`` Bonne journée/soirée :)");
     }
 });
 
