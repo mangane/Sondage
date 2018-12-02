@@ -9,28 +9,11 @@ client.on('message', message => {
     if (message.content === '!ping') {
     	message.reply('pong');
   	}
-const Discord = require("discord.js");
+const config = require('../config.json');
 
-exports.run = (client, message, args, level) => {
+exports.run = (client, message, args) => {
 
-  let question = args.slice(0).join(" ");
-
-  if (args.length === 0)
-  return message.reply('**Invalid Format:** `!Poll <Question>`')
-
-  const embed = new Discord.RichEmbed()
-  .setTitle("A Poll Has Been Started!")
-  .setColor("#5599ff")
-  .setDescription(`${question}`)
-  .setFooter(`Poll Started By: ${message.author.username}`, `${message.author.avatarURL}`)
-
-  message.channel.send({embed})
-  .then(msg => {
-    msg.react('👍')
-    msg.react('👎')
-    msg.react('🤷')
-  })
-  .catch(() => console.error('Emoji failed to react.'));
+return message.reply(`\n${config.prefix}Help - Displays Help Menu\n${config.prefix}Poll <Question>\n${config.prefix}Prefix <New Prefix> - Sets New Prefix. **[BOT OWNER ONLY${config.prefix}]**`)
 
 }
 });
