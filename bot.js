@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.reply('pong');
   	}
     if (message.content === '!roue'){
-message.reply `${args.member}`;}
+message.guild.member(args.member.id);}
     
 if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
