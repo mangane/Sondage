@@ -10,6 +10,7 @@ client.on('message', message => {
     	message.reply('**pong!**');
   	}
     if (message.content === 'pute') {
+messages.array(1).length;
         message.reply('attention a ton vocabulaire');
     }  
 });
