@@ -16,7 +16,7 @@ client.on('message', message => {
     }
     
     if (message.content === 'salope') {
-         await message.delete(1);
+         await message.delete(2);
         message.reply("parle sur un autre ton dis donc :thumbsdown:");
     }  
     
