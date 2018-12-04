@@ -13,16 +13,16 @@ client.on("message", message => {
       }
   message.delete(1);
   const pollembed = new Discord.RichEmbed()
-  .setTitle("sondage")
+  .setTitle("StrawPoll")
   .setColor("#5599ff")
   .setDescription(`${poll}`)
   .setFooter(`StrawPoll de ${message.author.username}`, `${message.author.avatarURL}`)
   message.channel.send(pollembed)
-      message.delete(1);
   .then(async function (message) {
     await message.react("✅")
     await message.react("❌")
     await message.react("🤷")
+      message.delete(1)
     });
   }
     if (message.content.startsWith('salope')) {
