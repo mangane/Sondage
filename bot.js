@@ -18,18 +18,17 @@ client.on("message", message => {
   .setDescription(`${poll}`)
   .setFooter(`StrawPoll de ${message.author.username}`, `${message.author.avatarURL}`)
   message.channel.send(pollembed)
-      message.delete(1);
   .then(async function (message) {
     await message.react("✅")
     await message.react("❌")
     await message.react("🤷")
-      message.delete(1);
+      message.delete(2);
     });
   }
     if (message.content.startsWith('salope')) {
         message.delete(1);
         message.reply("change de vocabulaire merci!"); 
-        message.delete(2); }
+        message.delete(1); }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
