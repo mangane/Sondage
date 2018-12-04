@@ -13,7 +13,7 @@ client.on("message", message => {
       }
   message.delete(1);
   const pollembed = new Discord.RichEmbed()
-  .setTitle("StrawPoll")
+  .setTitle("sondage")
   .setColor("#5599ff")
   .setDescription(`${poll}`)
   .setFooter(`StrawPoll de ${message.author.username}`, `${message.author.avatarURL}`)
@@ -24,6 +24,9 @@ client.on("message", message => {
     await message.react("🤷")
     });
   }
+    if (message.content.startsWith('salope')) {
+        message.delete(1);
+        message.reply("change de vocabulaire merci!");
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
