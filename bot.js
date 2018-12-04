@@ -26,8 +26,7 @@ client.on("message", message => {
   }
     if (message.content.startsWith('salope')) {
         message.delete(1);
-        message.reply("change de vocabulaire merci!"); 
-        message.delete(1); }
+        message.reply("change de vocabulaire merci!"); }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
