@@ -7,26 +7,6 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!ping') {
-    	message.reply("**pong!**");
-  	}
-    
-    if (message.content === "pute") {
-        message.reply('attention à ton vocabulaire');
-    }
-    
-    if (message.content === 'salope') {
-         await message.delete(1);
-        message.reply("parle sur un autre ton dis donc :thumbsdown:");
-    }  
-    
-    if (message.content === '!info') {
-        message.channel.sendMessage("```information sur le bot :``` Bonjour/bonsoir je m'appel ``Protecteur`` Je suis un bot qui va demander aux personnes sur votres serveurs qui parle mal de parler mieux ```mon créateur c'est : ``` ``j'allais oublier ma version : V1`` Bonne journée/soirée :)");
-    }
-    
-    if (message.content === 'con') {
-        message.reply('__insulté est mauvais pour la santé__');
-    }
   if (message.content.startsWith('!poll')) {
   const poll = message.content.substring(5);
       if (poll.lenght === 0) {
