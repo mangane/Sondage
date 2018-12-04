@@ -27,6 +27,26 @@ client.on('message', message => {
     if (message.content === 'con') {
         message.reply('__insulté est mauvais pour la santé__')
     }
+    client.on("message", message => {
+  if (message.content.startsWith('!poll')) {
+  const poll = message.content.substring(5);
+      if (poll.lenght === 0) {
+         message.reply("Vous n'avez pas mis de question");
+      }
+  message.delete(1);
+  const pollembed = new Discord.RichEmbed()
+  .setTitle("StrawPoll")
+  .setColor("#5599ff")
+  .setDescription(`${poll}`)
+  .setFooter(`StrawPoll de ${message.author.username}`, `${message.author.avatarURL}`)
+  message.channel.send(pollembed)
+  .then(async function (message) {
+    await message.react("✅")
+    await message.react("❌")
+    await message.react("🤷")
+    });
+  }
+});
 });
 
 // THIS  MUST  BE  THIS  WAY
