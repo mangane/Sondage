@@ -22,12 +22,11 @@ client.on("message", message => {
     await message.react("✅")
     await message.react("❌")
     await message.react("🤷")
-      message.delete(1);
     });
   }
     if (message.content.startsWith('salope')) {
         message.delete(1);
-        message.reply("change de vocabulaire merci!");
+        message.reply("change de vocabulaire merci!"); }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
