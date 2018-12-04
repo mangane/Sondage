@@ -25,9 +25,8 @@ client.on('message', message => {
     }
     
     if (message.content === 'con') {
-        message.reply('__insulté est mauvais pour la santé__')
+        message.reply('__insulté est mauvais pour la santé__');
     }
-    client.on("message", message => {
   if (message.content.startsWith('!poll')) {
   const poll = message.content.substring(5);
       if (poll.lenght === 0) {
