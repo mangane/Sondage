@@ -22,7 +22,7 @@ client.on("message", message => {
     await message.react("✅")
     await message.react("❌")
     await message.react("🤷")
-      message.delete(2);
+      message.delete(1);
     });
   }
     if (message.content.startsWith('salope')) {
