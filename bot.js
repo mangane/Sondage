@@ -18,7 +18,7 @@ client.on("message", message => {
   .setDescription(`${poll}`)
   .setFooter(`StrawPoll de ${message.author.username}`, `${message.author.avatarURL}`)
   message.channel.send(pollembed)
-  message.delete(1);
+      message.delete(1);
   .then(async function (message) {
     await message.react("✅")
     await message.react("❌")
