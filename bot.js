@@ -5,8 +5,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
 });
-
-client.on('message', message => {
+client.on("message", message => {
   if (message.content.startsWith('!poll')) {
   const poll = message.content.substring(5);
       if (poll.lenght === 0) {
@@ -26,7 +25,5 @@ client.on('message', message => {
     });
   }
 });
-});
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
