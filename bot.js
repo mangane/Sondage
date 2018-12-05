@@ -30,24 +30,6 @@ client.on("message", message => {
     if (message.content.startsWith('!commandes')) {
         message.delete(1);
         message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes```"); }
-    var dictionary = require('./dictionary');
-
-module.exports = function filter(string) {
-  string = string || '';
-  var regexp = new RegExp(dictionary.join('|'), 'gi');
-
-  return string.replace(regexp, function(s) {
-    var i = 0;
-    var asterisks = '';
-
-    while (i < s.length) {
-      asterisks += '*';
-      i++;
-    }
-
-    return asterisks; }
-                        
-});
      
 });
 // THIS  MUST  BE  THIS  WAY
