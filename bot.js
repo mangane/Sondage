@@ -31,18 +31,10 @@ client.on("message", message => {
         message.delete(1);
         message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes```"); }
     
-   if (message.content.startsWith('!warn')) {
-	mentionedUser = message.mentions.users.first();
-		let  args = message.content.split(mentionedUser).slice(1);
-		message.reply("Warned " + message.mentions.users.first() + ".\nHis ID is: " + message.mentions.users.first().id + " you can use this on the bot's website to check if the user has any warns")
-		mentionedUser.sendMessage("You got warned by Warnbot \nOn server " + message.guild.name + " by " + message.author.username + "\nReason : " + args.join(" "))
-		console.log('[C] ' + message.author.username + ' Warned ' + message.mentions.users.first() + ' On ' + message.guild.name)
-		var warn = {
-			"user": "" + message.author.username + "",
-			"discord_id": "" + message.mentions.users.first().id + "",
-			"reason": "" + args.join(" ") + "",
-      			"serverName": "" + message.guild.name + "",
-;}
+   if (message.content.startsWith('!clear')) {
+	   message.delete(`${clear}`)
+	   
+	
      
 });
 // THIS  MUST  BE  THIS  WAY
