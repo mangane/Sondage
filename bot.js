@@ -5,7 +5,9 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 client.on("message", message => {
-  if (message.content.startsWith('!poll')) {
+ if message.content('!commandes) {
+                    message.channel.sendMessage('__les commandes du bot : __ ```!poll [Arguments] ( pour cree un sondage)``` ```!commandes (pour voir les commandes disponnibles)```); }
+    if (message.content.startsWith('!poll')) {
   const poll = message.content.substring(5);
       if (poll.lenght === 0) {
          message.reply("Vous n'avez pas mis de question");
