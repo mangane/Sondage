@@ -22,11 +22,9 @@ client.on("message", message => {
     await message.react("✅")
     await message.react("❌")
     await message.react("🤷")
-    });
   }
-    message.delete(1); 
-        message.reply("change de vocabulaire merci!"); }
-    if (message.content.startsWith('!commandes')) {
+      
+      if (message.content.startsWith('!commandes')) {
         message.delete(1);
         message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes```!clear (efface 10 messages)```"); }
 if (message.content.startsWith('!clear')) {
