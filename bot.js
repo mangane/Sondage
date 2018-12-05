@@ -11,13 +11,13 @@ client.on("message", message => {
       if (poll.lenght === 0) {
          message.reply("Vous n'avez pas mis de question");
       }
+            message.delete(1);
   const pollembed = new Discord.RichEmbed()
   .setTitle("StrawPoll")
   .setColor("#5599ff")
   .setDescription(`${poll}`)
   .setFooter(`StrawPoll de ${message.author.username}`, `${message.author.avatarURL}`)
   message.channel.send(pollembed)
-      message.delete(1);
   .then(async function (message) {
     await message.react("✅")
     await message.react("❌")
