@@ -29,7 +29,7 @@ client.on("message", message => {
         message.reply("change de vocabulaire merci!"); }
     if (message.content.startsWith('!commandes')) {
         message.delete(1);
-        message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes```"); }
+        message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes```!clear (efface 10 messages)```"); }
     
 	if (message.content.startsWith('!clear')) {
         message.delete(10);
