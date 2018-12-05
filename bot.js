@@ -32,7 +32,7 @@ client.on("message", message => {
         message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes```"); }
     
    if (message.content.startsWith('!clear')) {
-	   message.delete(`${clear}`)
+	   message.delete(${clear})
 	   
 	
      
