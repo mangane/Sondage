@@ -45,7 +45,7 @@ module.exports = function filter(string) {
       i++;
     }
 
-    return asterisks;}
+    return asterisks; }
                         
 });
      
