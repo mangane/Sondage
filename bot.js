@@ -27,33 +27,7 @@ client.on("message", message => {
       if (message.content.startsWith('!commandes')) {
         message.delete(1);
         message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes``` ```un anti insulte" (pas encore au point)```"); }
-     
-if (message.content.startsWith('salope')) {
-          message.delete(1);
-        message.reply('merci de changer de vocabulaire !'); }
 
-if (message.content.startsWith('pute')) {
-       message.delete(1);
-        message.reply('merci de changer de vocabulaire !'); }
-
-if (message.content.startsWith('enculer')) {
-          message.delete(1);
-        message.reply('merci de changer de vocabulaire !'); }
-
-if (message.content.startsWith('fdp')) {
-          message.delete(1);
-        message.reply('merci de changer de vocabulaire !'); }
-
-if (message.content.startsWith('fils de pute')) {
-          message.delete(1);
-        message.reply('merci de changer de vocabulaire !'); }
-if (message.content.startsWith('anal')) {
-          message.delete(1);
-        message.reply('merci de changer de vocabulaire !'); }
-
-if (message.content.startsWith('dick')) {
-          message.delete(1);
-        message.reply('merci de changer de vocabulaire !'); }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
