@@ -22,9 +22,7 @@ client.on("message", message => {
     await message.react("❌")
     await message.react("🤷") 
   }); 
-  }       
-        message.delete(1);
-        message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes``` ```un anti insulte" (pas encore au point)```"); 
+  }              
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
