@@ -25,7 +25,7 @@ client.on("message", message => {
   } 
     if (message.content.startsWith('!commandes')) {
         message.delete(1)
-        message.channel.sendMessage(" voici la liste des commandes : ```!poll ``` ```!commandes``` ```un anti insulte" (pas encore au point)```"); }
+        message.(" voici la liste des commandes : ```!poll ``` ```!commandes``` ```un anti insulte" (pas encore au point)```"); }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
