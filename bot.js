@@ -23,9 +23,6 @@ client.on("message", message => {
     await message.react("🤷") 
   }); 
   } 
-    if (message.content.startsWith('!commandes')) {
-        message.delete(1)
-        message.(" voici la liste des commandes : ```!poll ``` ```!commandes``` ```un anti insulte" (pas encore au point)```"); }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
