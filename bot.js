@@ -11,7 +11,6 @@ client.on("message", message => {
       if (poll.lenght === 0) {
          message.reply("Vous n'avez pas mis de question");
       }
-  message.delete(1);
   const pollembed = new Discord.RichEmbed()
   .setTitle("StrawPoll")
   .setColor("#5599ff")
