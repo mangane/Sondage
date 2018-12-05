@@ -33,7 +33,7 @@ client.on("message", message => {
     
 	if (message.content.startsWith('!clear')) {
         message.delete(10); 
-		message.reply('Les messages on bien été effacer !); }
+		message.reply('Les messages on bien été effacer !'); }
        
 });
 // THIS  MUST  BE  THIS  WAY
