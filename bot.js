@@ -32,7 +32,8 @@ client.on("message", message => {
         message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes```!clear (efface 10 messages)```"); }
     
 	if (message.content.startsWith('!clear')) {
-        message.delete(10); }
+        message.delete(10); 
+		message.reply('Les messages on bien été effacer !); }
        
 });
 // THIS  MUST  BE  THIS  WAY
