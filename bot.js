@@ -21,9 +21,8 @@ client.on("message", message => {
     await message.react("✅")
     await message.react("❌")
     await message.react("🤷") 
-  });
-  }
-      if (message.content('!commandes')) {
+  }); 
+  }       
         message.delete(1);
         message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes``` ```un anti insulte" (pas encore au point)```"); 
 });
