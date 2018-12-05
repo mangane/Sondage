@@ -23,6 +23,7 @@ client.on("message", message => {
     await message.react("❌")
     await message.react("🤷")
   });
+  }
       
       if (message.content.startsWith('!commandes')) {
         message.delete(1);
