@@ -27,7 +27,7 @@ client.on("message", message => {
       
       if (message.content.startsWith('!commandes')) {
         message.delete(1);
-        message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes```!clear (efface 10 messages)```"); }
+        message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes```un anti insulte" (pas encore au point)```"); }
       if (message.content.startsWith('salope')) {
           message.delete(1);
         message.reply('merci de changer de vocabulaire !'); }
