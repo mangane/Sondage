@@ -17,7 +17,7 @@ client.on("message", message => {
   .setColor("#5599ff")
   .setDescription(`${poll}`)
   .setFooter(`StrawPoll de ${message.author.username}`, `${message.author.avatarURL}`)
-  message.channel.send(pollembed)
+  message.channel.sendMessage(pollembed)
   .then(async function (message) {
     await message.react("✅")
     await message.react("❌")
