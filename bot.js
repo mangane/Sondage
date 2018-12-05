@@ -24,20 +24,14 @@ client.on("message", message => {
     await message.react("🤷")
     });
   }
-    if (message.content.startsWith('salope')) {
-        message.delete(1);
+    message.delete(1); 
         message.reply("change de vocabulaire merci!"); }
     if (message.content.startsWith('!commandes')) {
         message.delete(1);
         message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes```!clear (efface 10 messages)```"); }
-    
-	if (message.content.startsWith('!clear')) {
-message.delete(1); 
-message.delete(1); 
-message.delete(1); 
-message.delete(1); 
-message.delete(1); 
-		message.reply('Les messages on bien été effacer !'); }
+if (message.content.startsWith('!commandes')) {
+        message.delete(5);
+        message.reply('Les messages on bien été effacer !'); }
        
 });
 // THIS  MUST  BE  THIS  WAY
