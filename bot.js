@@ -29,7 +29,7 @@ client.on("message", message => {
         message.delete(1);
         message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes```!clear (efface 10 messages)```"); }
       if (message.content.startsWith('!clear')) {
-        message.delete(1);
+        message.delete(5);
         message.reply('Les messages on bien été effacer !'); }
        
 });
