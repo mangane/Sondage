@@ -21,8 +21,8 @@ client.on("message", message => {
   .then(async function (message) {
     await message.react("✅")
     await message.react("❌")
-    await message.react("🤷");
-  }
+    await message.react("🤷")
+  });
       
       if (message.content.startsWith('!commandes')) {
         message.delete(1);
