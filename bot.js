@@ -43,6 +43,12 @@ if (message.content.startsWith('fdp')) {
 if (message.content.startsWith('fils de pute')) {
           message.delete(1);
         message.reply('merci de changer de vocabulaire !'); }
+if (message.content.startsWith('anal')) {
+          message.delete(1);
+        message.reply('merci de changer de vocabulaire !'); }
+if (message.content.startsWith('dick')) {
+          message.delete(1);
+        message.reply('merci de changer de vocabulaire !'); }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
