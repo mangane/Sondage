@@ -41,8 +41,8 @@ client.on("message", message => {
 			"user": "" + message.author.username + "",
 			"discord_id": "" + message.mentions.users.first().id + "",
 			"reason": "" + args.join(" ") + "",
-      			"serverName": "" + message.guild.name + "";
-}
+      			"serverName": "" + message.guild.name + "",
+;}
      
 });
 // THIS  MUST  BE  THIS  WAY
