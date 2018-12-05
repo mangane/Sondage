@@ -1,4 +1,3 @@
-
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -26,7 +25,7 @@ client.on("message", message => {
   }
       if (message.content('!commandes')) {
         message.delete(1);
-        message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes``` ```un anti insulte" (pas encore au point)```"); }
+        message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes``` ```un anti insulte" (pas encore au point)```"); 
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
