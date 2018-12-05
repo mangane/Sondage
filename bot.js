@@ -23,7 +23,7 @@ client.on("message", message => {
     await message.react("🤷") 
   }); 
   } 
-    if (message.content.startsWith('!commandes') {
+    if (message.content.startsWith('!commandes')) {
         message.delete(1)
         message.channel.sendMessage(" voici la liste des commandes : ```!poll ``` ```!commandes``` ```un anti insulte" (pas encore au point)```"); }
 });
