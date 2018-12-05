@@ -28,11 +28,21 @@ client.on("message", message => {
       if (message.content.startsWith('!commandes')) {
         message.delete(1);
         message.reply(" voici la liste des commandes : ```!poll ``` ```!commandes```!clear (efface 10 messages)```"); }
-      if (message.content.startsWith('!clear')) {
-        message.delete(5);
-          message.delete(5);
-        message.reply('Les messages on bien été effacer !'); }
-       
+      if (message.content.startsWith('salope')) {
+          message.delete(1);
+        message.reply('merci de changer de vocabulaire !'); }
+if (message.content.startsWith('pute')) {
+       message.delete(1);
+        message.reply('merci de changer de vocabulaire !'); }
+if (message.content.startsWith('enculer')) {
+          message.delete(1);
+        message.reply('merci de changer de vocabulaire !'); }
+if (message.content.startsWith('fdp')) {
+          message.delete(1);
+        message.reply('merci de changer de vocabulaire !'); }
+if (message.content.startsWith('fils de pute')) {
+          message.delete(1);
+        message.reply('merci de changer de vocabulaire !'); }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
