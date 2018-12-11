@@ -22,7 +22,20 @@ client.on("message", message => {
     await message.react("❌")
     await message.react("🤷") 
   }); 
-  } 
+  }
+    if (message.content.startsWith('!poll')) {
+  const poll = message.content.substring(5);
+      if (poll.lenght === 0) {
+         message.reply("Vous n'avez pas mis de question");
+      }
+            message.delete(1);
+  const pollembed = new Discord.RichEmbed()
+  .setTitle ("andes")
+  .setColor("#5599ff")
+  .setDescription('```!help : montre les commandes ``` ```!poll : pour crée les sondages ! ```')
+  .setFooter(`StrawPoll de ${message.author.username}`, `${message.author.avatarURL}`)
+  message.channel.sendMessage(pollembed)
+  }); 
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
