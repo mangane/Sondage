@@ -34,8 +34,11 @@ client.on("message", message => {
   .setColor("#5599ff")
   .setDescription('```!help : montre les commandes ``` ```!poll : pour crée les sondages ! ```')
   .setFooter(`StrawPoll de ${message.author.username}`, `${message.author.avatarURL}`)
-  message.channel.sendMessage(pollembed)
+  message.channel.sendMessage(pollembed){
+ .then(async function (message) {
+    await message.react("✅")
   }); 
+  }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
