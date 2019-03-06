@@ -10,5 +10,7 @@ module.exorts.help = {
 };
 message.delete().catch();
 message.channel.send(messageToBot);
+};
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
