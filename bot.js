@@ -12,7 +12,6 @@ client.on("ready", () => {
 
 client.on(`message`, message =>{
     if(message.content.startsWith("help")) {
-        message.delete()
         message.channel.send("Salut, taper !help sûr #commande pour voir les commandes de Modérateur[Bêta]");
         }
 });
