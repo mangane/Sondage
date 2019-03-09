@@ -16,7 +16,7 @@ client.on(`message`, message =>{
         }
     if (message.content.startsWith(prefix + "kick")) {
         if (message.member.roles.find('name', 'Wielder')) {
-            let sub = message.content.substring(config.modprefix.length+5);
+            let sub = message.content.substring(config.prefix.length+5);
             let args = sub.split(" ");
             let userToKick = message.mentions.users.first();
             var reason = sub.substring(args[0].length+1);
