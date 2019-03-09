@@ -13,7 +13,7 @@ client.on("ready", () => {
 client.on(`message`, message =>{
     if(message.content.startsWith("Bonjour")) {
         message.delete()
-        message.channel.send("Bonjour, taper !help sûr #commande pour voir les commandes de Modérateur [Bêta]");
+        message.channel.send("Salut, taper !help sûr #commande pour voir les commandes de Modérateur [Bêta]");
         }
 });
 // THIS  MUST  BE  THIS  WAY
