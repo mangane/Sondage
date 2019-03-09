@@ -11,7 +11,7 @@ client.on("ready", () => {
 });
 
 client.on(`message`, message =>{
-    if,message.content.startsWith("Bonjour")) {
+    if,message.content.startsWith("Bonjour") {
         message.channel.send("Bonjour, taper !help sûr #commande pour voir les commandes de Modérateur [Bêta]");
         }
     
