@@ -11,10 +11,10 @@ client.on("ready", () => {
 });
 
 client.on(`message`, message =>{
-    if(message.content.startsWith("Bonjour" {
+    if(message.content.startsWith("Bonjour")) {
+        return 
         message.channel.send("Bonjour, taper !help sûr #commande pour voir les commandes de Modérateur [Bêta]");
         }
-    
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
