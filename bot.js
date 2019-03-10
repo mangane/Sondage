@@ -17,7 +17,7 @@ client.on(`message`, message =>{
         }
     if(message.content.startsWith(prefix + "kick")) {
        const member = message.mentions.members.first();
-   message.channel.send(`${message.mentions.users} à été Kické par ${message.author.username}`)
+   message.channel.send(`${message.mentions.users.first()} à été Kické par ${message.author.username}`)
         member.kick();
    }
     
