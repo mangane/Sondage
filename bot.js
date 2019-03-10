@@ -25,8 +25,8 @@ client.on(`message`, message =>{
 		.addField("!help", "Affiche les commandes")
 		.addField("!info", "Donne des informations sur le bot")
 		.addField("!invite", "Donne le lien pour me faire joindre votre serveur")
-		.addField("!announcement [text]", "Will make the bot say an announcement and tag everyone")
-		.addField("!cat", "Will send a random cat image");
+		.addField("!mute", "Permer d'interdire à un membre de parler")
+		.addField("!unmute", "Retire l'interdiction de parler");
 		message.channel.send({embed})
 	}
     
