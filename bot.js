@@ -24,8 +24,9 @@ client.on(`message`, message =>{
      		.setColor(0x954D23)
      		.setTitle("Pong")
      		.addField("💬","180ms");
-     	.setDescription(Bot crée par)	message.channel.send({embed})
-     		message.channel.send({embed})
+     	.setDescription("Bot crée par")	
+           message.channel.send({embed})
+     		
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
