@@ -18,18 +18,14 @@ client.on(`message`, message =>{
     if(message.content.startsWith(prefix + "say")) {
         message.channel.send("${args.join}")
         }
-    if (message.content.startsWith(prefix + "hep")) {
-		const embed = new Discord.RichEmbed()
-		.setColor(0x954D23)
-		.setTitle("Liste des commandes :")
-		.addField("!help", "Affiche les commandes")
-		.addField("!info", "Donne des informations sur le bot")
-		.addField("!invite", "Donne le lien pour me faire joindre votre serveur")
-		.addField("!mute", "Permer d'interdire à un membre de parler")
-		.addField("!unmute", "Retire l'interdiction de parler")
-		message.channel.send({embed})
-	}
     
+    Client.on("guildMemberAdd", member => {
+   member.guild.defaultChannel.send("Welcome to: " + member.guild.name + " Hope you enjoy it here")
+});
+
+Client.on("guildMemberRemove", member => {
+   member.guild.defaultChannel.send("Goodbye: " + member.user.username + " from " + member.guild.name)
+});
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
