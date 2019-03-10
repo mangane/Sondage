@@ -18,8 +18,8 @@ client.on(`message`, message =>{
         }
     if(message.content.startsWith(prefix + "kick")) {
        const member = message.mentions.members.first();
-    member.kick();
-        message.channel.send(`${message.mentions.users} à été Kické par ${message.author.username}`)
+   message.channel.send(`${message.mentions.users} à été Kické par ${message.author.username}`)
+        member.kick();
    }
     
 });
