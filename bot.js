@@ -2,6 +2,7 @@ const CLEAR_MESSAGES = '!clearMessages';
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var prefix = "!";
+var kick = message.guild.member(message.mentions.users.first());
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -18,7 +19,8 @@ client.on(`message`, message =>{
     if(message.content.startsWith(prefix + "kick")) {
        const member = message.mentions.members.first();
     member.kick();
-    }
+        message.channel.send(`${kick.user.username} à été Kické par ${message.author.username}`)
+   }
     
 });
 // THIS  MUST  BE  THIS  WAY
