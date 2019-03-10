@@ -18,7 +18,13 @@ client.on(`message`, message =>{
     if(message.content.startsWith(prefix + "say")) {
         message.channel.send("${args.join}")
     
-       
+       if(message.content.startsWith(prefix + "ping")) {
+     		const embed = new
+     		Discord.RichEmbed()
+     		.setColor(0x954D23)
+     		.setTitle("Pong")
+     		.addField("💬","180ms");
+     	.setDescription(Bot crée par)	message.channel.send({embed})
      		message.channel.send({embed})
 });
 // THIS  MUST  BE  THIS  WAY
