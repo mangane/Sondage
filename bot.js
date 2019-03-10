@@ -13,7 +13,7 @@ client.on("ready", () => {
 client.on(`message`, message =>{
     if(message.content.startsWith("help")) {
         message.delete()
-        message.channel.send(`${message.mention.user} Salut, taper !help sûr #commande pour voir les commandes de Modérateur[Bêta]`);
+        message.channel.send(`${message.author.mention} Salut, taper !help sûr #commande pour voir les commandes de Modérateur[Bêta]`);
         }
     
 });
