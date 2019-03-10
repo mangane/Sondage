@@ -23,7 +23,8 @@ client.on(`message`, message =>{
         const embed = new 
 	Discord.RichEmbed()
 		.setColor(0x954D23)
-		.setDescription(message.author.username + " says: " + args.join(" "));
+		.setTitle("Say")
+		.addField(message.author.username + " says: " + args.join(" "));
 		message.channel.send({embed})
 	    }
 });
