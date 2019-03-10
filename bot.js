@@ -21,12 +21,12 @@ client.on(`message`, message =>{
     if (message.content.startsWith(prefix + "hep")) {
 		const embed = new Discord.RichEmbed()
 		.setColor(0x954D23)
-		.setTitle("Command List:")
+		.setTitle("Liste des commandes :")
 		.addField("!help", "Affiche les commandes")
 		.addField("!info", "Donne des informations sur le bot")
 		.addField("!invite", "Donne le lien pour me faire joindre votre serveur")
 		.addField("!mute", "Permer d'interdire à un membre de parler")
-		.addField("!unmute", "Retire l'interdiction de parler");
+		.addField("!unmute", "Retire l'interdiction de parler")
 		message.channel.send({embed})
 	}
     
