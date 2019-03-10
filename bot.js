@@ -2,7 +2,6 @@ const CLEAR_MESSAGES = '!clearMessages';
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var prefix = "!";
-var kick = message.guild.member(message.mentions.users.first());
 
 client.on('ready', () => {
     console.log('I am ready!');
