@@ -18,7 +18,7 @@ client.on(`message`, message =>{
     if(message.content.startsWith(prefix + "say")) {
         message.channel.send("${args.join}")
         }
-    if (command == "help") {
+    if (message.content.startsWith(prefix + "hep") {
 		const embed = new Discord.RichEmbed()
 		.setColor(0x954D23)
 		.setTitle("Command List:")
