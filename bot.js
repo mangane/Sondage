@@ -17,6 +17,7 @@ client.on(`message`, message =>{
         }
     if(message.content.startsWith(prefix + "say")) {
         message.channel.send("args.join(" "))
+                             }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
