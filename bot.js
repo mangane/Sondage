@@ -20,12 +20,8 @@ client.on(`message`, message =>{
     
         if (message.content.startsWith(prefix + "say") {
 		message.delete()
-        const embed = new 
-	Discord.RichEmbed()
-		.setColor(0x954D23)
-		.setTitle("Say")
-		.addField(args.join(" "));
-		message.channel.send({embed})
+        message.channel.send(args.join(" "));
+		message.channel.send({embed}
 	    }
 });
 // THIS  MUST  BE  THIS  WAY
