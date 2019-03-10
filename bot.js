@@ -20,10 +20,12 @@ client.on(`message`, message =>{
     
         if (message.content.startsWith(prefix + "say") {
 		message.delete()
-        const embed = new Discord.RichEmbed()
+        const embed = new 
+	Discord.RichEmbed()
 		.setColor(0x954D23)
 		.setDescription(message.author.username + " says: " + args.join(" "));
 		message.channel.send({embed})
+	    }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
