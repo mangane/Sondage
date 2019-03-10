@@ -18,12 +18,7 @@ client.on(`message`, message =>{
     if(message.content.startsWith(prefix + "say")) {
         message.channel.send("${args.join}")
     
-        if(message.content.startsWith(prefix + "say")) {
-     		const embed = new
-     		Discord.RichEmbed()
-     		.setColor(0x954D23)
-     		.setTitle("say")
-     		.addField("say","args.join(" ")");
+       
      		message.channel.send({embed})
 });
 // THIS  MUST  BE  THIS  WAY
