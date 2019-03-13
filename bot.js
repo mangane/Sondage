@@ -9,6 +9,10 @@ client.on('ready', () => {
 client.on("ready", () => {
     console.log("Connexion en cours ...");
 });
+client.on("ready", () => {
+console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
+client.user.setActivity(`Overbot Maintenance`);
+});
 
 client.on(`message`, message =>{
     if(message.content.startsWith("help")) {
