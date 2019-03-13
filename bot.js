@@ -23,7 +23,7 @@ if (message.content.startsWith(prefix + "help")) {
      const embed = new Discord.RichEmbed()		
      .setColor(0x954D23)		
      .setTitle("Patch OverBot V0.5.0")		
-     .addfield("1","Modification du préfix "!" en "&"")
+     .addfield("1","Le préfix du bot est Maintenant : &")
      	message.channel.send({embed})	}
 }
 });
