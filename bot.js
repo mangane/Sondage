@@ -25,7 +25,7 @@ if (message.content.startsWith(prefix + "help")) {
      .setTitle("Patch OverBot V0.5.0")		
      .addfield("1","Le préfix du bot est Maintenant : &")
      	message.channel.send({embed})	}
-}
+
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
