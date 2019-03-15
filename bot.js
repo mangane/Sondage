@@ -13,7 +13,10 @@ client.on("ready", () => {
 console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
 client.user.setActivity(`Patch de OverBot`);
 });
-let statusArray = [ ${config.prefix}help | Surveille ${client.guilds.size} serveurs !, //Vous pouvez changer les jeux ! :D ${config.prefix}help | ${client.user.username} version ${config.version} !, ${config.prefix}help | Possède ${client.users.size} membres !,
+let statusArray = [ 
+    ${config.prefix}help | Surveille ${client.guilds.size} serveurs !, //Vous pouvez changer les jeux ! :D 
+    ${config.prefix}help | ${client.user.username} version ${config.version} !, 
+    ${config.prefix}help | Possède ${client.users.size} membres !,
 ];
 client.on(`message`, message =>{
     if(message.content.startsWith(prefix + "patch")) {
