@@ -15,7 +15,7 @@ client.user.setActivity(`Patch de OverBot`);
 });
 
 client.on(`message`, message =>{
-if (message.content.startsWith(prefix + "info")) {		
+if(message.content.startsWith(prefix + "info")) {		
      const embed = new Discord.RichEmbed()		
      .setColor(0x954D23)		
      .setTitle("Patch OverBot")		 
