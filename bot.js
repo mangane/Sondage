@@ -23,7 +23,7 @@ if(message.content.startsWith(prefix + "info")) {
      .addField("Commande retiré :","La commande &ping à été retiré pour une courte durée (elle reviendra normalement à la prochaine mise à jour")
      .addField("mention","@everyone")
      message.channel.send({embed})
-    message.channel.send("${message.mentions.users.first()")
+    message.channel.send("${message.mentions.users.first()}")
     }
 
 });
