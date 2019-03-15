@@ -15,8 +15,8 @@ client.user.setActivity(`Patch de OverBot`);
 });
 
 client.on(`message`, message =>{
-if(message.author.id == "516274923828805667") {
-    if(message.content.startsWith(prefix + "patch")) {		
+    if(message.content.startsWith(prefix + "patch")) {	
+        if(!message.guild.member(message.id).hasPermission("516274923828805667")) return message.channel.send("Vous n'avez pas la permission")
      const embed = new Discord.RichEmbed()		
      .setColor(0x954D23)		
      .setTitle("Patch/Mise à jour :")		 
