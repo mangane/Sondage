@@ -24,7 +24,8 @@ if (message.content.startsWith("patch")) {
      .setColor(0x954D23)		
      .setTitle("Patch")		
      .addfield("1","Le préfix du bot est Maintenant : &")
-     	message.channel.send({embed})	}
+     	message.channel.send({embed});
+}
 
 });
 // THIS  MUST  BE  THIS  WAY
