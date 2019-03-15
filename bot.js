@@ -27,7 +27,6 @@ client.on(`message`, message =>{
      .setFooter(`Bot crée par ⏳Gaétan#2852`)
      message.channel.send({embed})
         .then(async function (message) {
-    await message.react("✅")   
     message.channel.send(`${message.mentions.roles.first()}`)
     }
 
