@@ -15,8 +15,12 @@ client.user.setActivity(`Patch de OverBot`);
 });
 
 client.on(`message`, message =>{
-if(message.content.startsWith("patch")) {
-    message.channel.send("```Voici les nouveaux patch de OverBot```")
+if (message.content.startsWith(prefix + "info")) {		
+     const embed = new Discord.RichEmbed()		
+     .setColor(0x954D23)		
+     .setTitle("Patch OverBot")		 
+     .addField("&","changement du préfix en &");
+     message.channel.send({embed})
 }
 
 });
