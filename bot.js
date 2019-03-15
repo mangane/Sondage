@@ -29,24 +29,12 @@ client.on(`message`, message =>{
     message.channel.send(`${message.mentions.roles.first()}`)
     }
 
-    if (message.content.startsWith('!poll')) {
-  const poll = message.content.substring(5);
-      if (poll.size === 0) {
-         message.reply("Vous n'avez pas mis de question");
-      }
-            message.delete(1);
-  const pollembed = new Discord.RichEmbed()
-  .setTitle("Sondage")
-  .setColor("#5599ff")
-  .setDescription(`${poll}`)
-  .setFooter(`StrawPoll de ${message.author.username}`, `${message.author.avatarURL}`)
-  message.channel.sendMessage(pollembed)
-  .then(async function (message) {
-    await message.react("✅")
-    await message.react("❌")
-    await message.react("🤷")
-  });
-}
+if (message.content.startsWith(prefix + "embed")){
+    let embed = new Discord.RichEmbed() 
+.setTitle(args.join(' ')) 
+    .setColor(message.member.colorRole.color); 
+    message.channel.send(embed); 
+    return message.delete
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
