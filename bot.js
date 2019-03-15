@@ -15,10 +15,6 @@ client.user.setActivity(`Patch de OverBot`);
 });
 
 client.on(`message`, message =>{
-    if(message.content.startsWith("help")) {
-        message.delete()
-        message.channel.send(`${message.author.username} Salut, taper !help sûr #commande pour voir les commandes de Modérateur[Bêta]`);
-        }
 if (message.content.startsWith("patch")) {
     message.delete()
     message.channel.reply("```Voici les nouveaux patch de OverBot");
