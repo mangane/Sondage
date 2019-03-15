@@ -26,8 +26,7 @@ client.on(`message`, message =>{
      .addField("mention","@Notife")
      message.channel.send({embed})
     message.channel.send(`${message.mentions.roles.first()}`)
-     .then(async function (message) {
-await message.react("✅")
+await message.react("✅");
     }
 
 });
