@@ -19,7 +19,7 @@ if (message.content.startsWith(prefix + "info")) {
      const embed = new Discord.RichEmbed()		
      .setColor(0x954D23)		
      .setTitle("Patch OverBot")		 
-     .addField("channgement du préfix en &,"a");
+     .addField("channgement du préfix en &","a");
      message.channel.send({embed})
 }
 
