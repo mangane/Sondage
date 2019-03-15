@@ -26,7 +26,6 @@ client.on(`message`, message =>{
      .addField("mention","@Notife")
      .setFooter(`Bot crée par ⏳Gaétan#2852`)
      message.channel.send({embed})
-        .then(async function (message) {
     message.channel.send(`${message.mentions.roles.first()}`)
     }
 
