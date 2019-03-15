@@ -26,11 +26,16 @@ client.on(`message`, message =>{
      .addField("mention","@Notife")
      .setFooter(`Bot crée par ⏳Gaétan#2852`)
      message.channel.send({embed})
+        .then(async function (message) {
+    await message.react("✅")
+    await message.react("❌")
+    await message.react("🤷");
     message.channel.send(`${message.mentions.roles.first()}`)
     }
-if (message.content.startsWith('!poll')) {
+
+    if (message.content.startsWith('!poll')) {
   const poll = message.content.substring(5);
-      if (poll.lenght === 0) {
+      if (poll.size === 0) {
          message.reply("Vous n'avez pas mis de question");
       }
             message.delete(1);
