@@ -24,11 +24,28 @@ client.on(`message`, message =>{
      .addField("Mise à jour du 13/03/19 :","Suite à la demande de plusieurs utilisateurs, le statu du bot est maintenant : joue à taper &help +nombre de serveurs")
      .addField("Commande retiré :","La commande &ping à été retiré pour une courte durée (elle reviendra normalement à la prochaine mise à jour")
      .addField("mention","@Notife")
+     .setFooter(`Bot crée par ⏳Gaétan#2852`)
      message.channel.send({embed})
     message.channel.send(`${message.mentions.roles.first()}`)
-await message.react("✅");
     }
-
+if (message.content.startsWith('!poll')) {
+  const poll = message.content.substring(5);
+      if (poll.lenght === 0) {
+         message.reply("Vous n'avez pas mis de question");
+      }
+            message.delete(1);
+  const pollembed = new Discord.RichEmbed()
+  .setTitle("Sondage")
+  .setColor("#5599ff")
+  .setDescription(`${poll}`)
+  .setFooter(`StrawPoll de ${message.author.username}`, `${message.author.avatarURL}`)
+  message.channel.sendMessage(pollembed)
+  .then(async function (message) {
+    await message.react("✅")
+    await message.react("❌")
+    await message.react("🤷")
+  });
+}
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
