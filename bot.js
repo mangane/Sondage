@@ -19,12 +19,9 @@ client.on(`message`, message =>{
         message.delete()
         message.channel.send(`${message.author.username} Salut, taper !help sûr #commande pour voir les commandes de Modérateur[Bêta]`);
         }
-if (message.content.startsWith("patch")) {		
-     const embed = new Discord.RichEmbed()		
-     .setColor(0x954D23)		
-     .setTitle("Patch")		
-     .addfield("1","Le préfix du bot est Maintenant &")
-     	message.channel.send({embed});
+if (message.content.startsWith("patch")) {
+    message.delete()
+    message.channel.reply("```Voici les nouveaux patch de OverBot");
 }
 
 });
