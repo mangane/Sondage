@@ -13,7 +13,8 @@ client.on("ready", () => {
 console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
 client.user.setActivity(`Patch de OverBot`);
 });
-
+let statusArray = [ ${config.prefix}help | Surveille ${client.guilds.size} serveurs !, //Vous pouvez changer les jeux ! :D ${config.prefix}help | ${client.user.username} version ${config.version} !, ${config.prefix}help | Possède ${client.users.size} membres !,
+];
 client.on(`message`, message =>{
     if(message.content.startsWith(prefix + "patch")) {
         message.delete()
@@ -24,17 +25,12 @@ client.on(`message`, message =>{
      .addField("Mise à jour du 13/03/19 :","Suite à la demande de plusieurs utilisateurs, le statu du bot est maintenant : joue à taper &help +nombre de serveurs")
      .addField("Commande retiré :","La commande &ping à été retiré pour une courte durée (elle reviendra normalement à la prochaine mise à jour")
      .addField("mention","@Notife")
+     .addField("Mise à jour du 15/03/19","Une commande à été rajouter, la commande &sondage")
      .setFooter(`Bot crée par ⏳Gaétan#2852`)
      message.channel.send({embed})
     message.channel.send(`${message.mentions.roles.first()}`)
     }
 
-if (message.content.startsWith(prefix + "embed")){
-    let embed = new Discord.RichEmbed() 
-.setTitle(args.join(' ')) 
-    .setColor(message.member.colorRole.color); 
-    message.channel.send(embed); 
-    return message.delete()
-});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
