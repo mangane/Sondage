@@ -27,8 +27,6 @@ client.on(`message`, message =>{
      .setFooter(`Bot crée par ⏳Gaétan#2852`)
      message.channel.send({embed})
     message.channel.send(`${message.mentions.roles.first()}`)
-    }
-
-
+    });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
