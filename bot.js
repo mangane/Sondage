@@ -27,7 +27,7 @@ if(message.content.startsWith(prefix + "patch")) {
      message.channel.send({embed})
     message.channel.send(`${message.mentions.roles.first()}`)
     }
-    if (message.content.startsWith(prefix + 'say')) {
+    if(message.content.startsWith(prefix + 'say')) {
 		let m = args.slice(1).join(' ');
     message.delete(100);
     message.channel.send(`${m}`);
