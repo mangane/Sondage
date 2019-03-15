@@ -23,7 +23,7 @@ if(message.content.startsWith(prefix + "patch")) {
      .addField("Commande retiré :","La commande &ping à été retiré pour une courte durée (elle reviendra normalement à la prochaine mise à jour")
      .addField("mention","@Notife")
      message.channel.send({embed})
-    message.channel.send(`${message.mentions.users.first()}`)
+    message.channel.send(`${message.mentions.roles.first()}`)
     }
 
 });
