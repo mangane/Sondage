@@ -16,8 +16,7 @@ client.user.setActivity(`Patch de OverBot`);
 
 client.on(`message`, message =>{
 if (message.content.startsWith("patch")) {
-    message.delete()
-    message.channel.reply("```Voici les nouveaux patch de OverBot```");
+    message.channel.reply("```Voici les nouveaux patch de OverBot```")
 }
 
 });
