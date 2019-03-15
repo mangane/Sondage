@@ -15,12 +15,6 @@ client.user.setActivity(`Patch de OverBot`);
 });
 
 client.on(`message`, message =>{
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
-if (message.content.startsWith(prefix + 'say')) {
-        let m = args.slice(1).join(' ');
-    message.delete(100);
-    message.channel.send(`${m}`);
-    }
     if(message.content.startsWith(prefix + "patch")) {		
      const embed = new Discord.RichEmbed()		
      .setColor(0x954D23)		
