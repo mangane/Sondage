@@ -15,14 +15,16 @@ client.user.setActivity(`Patch de OverBot`);
 });
 
 client.on(`message`, message =>{
-if(message.content.startsWith(prefix + "patch")) {
-    message.delete()
+if(message.content.startsWith(prefix + "info")) {		
      const embed = new Discord.RichEmbed()		
      .setColor(0x954D23)		
-     .setTitle("Patch OverBot")		 
-     .addField("changement du prefix","le préfix est maintenant &");
+     .setTitle("Disponibilité du bot :")		 
+     .addField("Mise à jour du 13/03/19 :","Suite à la demande de plusieurs utilisateurs, le statu du bot est maintenant : joue à taper &help +nombre de serveurs")
+     .addField("Commande retiré :","La commande &ping à été retiré pour une courte durée (elle reviendra normalement à la prochaine mise à jour")
+     .addField("mention","@everyone")
      message.channel.send({embed})
-}
+    message.channel.send("${message.mentions.users.first()")
+    }
 
 });
 // THIS  MUST  BE  THIS  WAY
