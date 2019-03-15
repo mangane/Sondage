@@ -15,11 +15,12 @@ client.user.setActivity(`Patch de OverBot`);
 });
 
 client.on(`message`, message =>{
-if(message.content.startsWith(prefix + "info")) {		
+if(message.content.startsWith(prefix + "patch")) {
+    message.delete()
      const embed = new Discord.RichEmbed()		
      .setColor(0x954D23)		
      .setTitle("Patch OverBot")		 
-     .addField("changement du prefix en &");
+     .addField("changement du prefix","le préfix est maintenant &");
      message.channel.send({embed})
 }
 
