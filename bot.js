@@ -2,7 +2,7 @@ const CLEAR_MESSAGES = '!clearMessages';
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var prefix = ".";
-
+const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
 client.on('ready', () => {
     console.log('I am ready!');
 });
@@ -25,6 +25,11 @@ if(message.content.startsWith(prefix + "patch")) {
      .addField("mention",`${message.mentions.roles.first()}`)
      message.channel.send({embed})
     message.channel.send(`${message.mentions.roles.first()}`)
+    }
+    if (message.content.startsWith(prefix + 'say')) {
+        let m = args.slice(1).join(' ');
+    message.delete(100);
+    message.channel.send(`${m}`);
     }
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN)
