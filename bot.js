@@ -22,7 +22,7 @@ client.on(`message`, message =>{
 if (message.content.startsWith("patch")) {		
      const embed = new Discord.RichEmbed()		
      .setColor(0x954D23)		
-     .setTitle("Patch OverBot V0.5.0")		
+     .setTitle("Patch")		
      .addfield("1","Le préfix du bot est Maintenant : &")
      	message.channel.send({embed})	}
 
