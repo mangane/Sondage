@@ -27,4 +27,4 @@ if(message.content.startsWith(prefix + "patch")) {
     message.channel.send(`${message.mentions.roles.first()}`)
     }
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN
+client.login(process.env.BOT_TOKEN)
