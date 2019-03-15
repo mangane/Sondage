@@ -34,7 +34,7 @@ if (message.content.startsWith(prefix + "embed")){
 .setTitle(args.join(' ')) 
     .setColor(message.member.colorRole.color); 
     message.channel.send(embed); 
-    return message.delete
+    return message.delete()
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
