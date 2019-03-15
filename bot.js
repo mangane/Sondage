@@ -18,7 +18,7 @@ client.on(`message`, message =>{
 if(message.content.startsWith(prefix + "patch")) {		
      const embed = new Discord.RichEmbed()		
      .setColor(0x954D23)		
-     .setTitle("Disponibilité du bot :")		 
+     .setTitle("Patch/Mise à jour :")		 
      .addField("Mise à jour du 13/03/19 :","Suite à la demande de plusieurs utilisateurs, le statu du bot est maintenant : joue à taper &help +nombre de serveurs")
      .addField("Commande retiré :","La commande &ping à été retiré pour une courte durée (elle reviendra normalement à la prochaine mise à jour")
      .addField("mention","@Notife")
