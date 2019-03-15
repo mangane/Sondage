@@ -15,7 +15,8 @@ client.user.setActivity(`Patch de OverBot`);
 });
 
 client.on(`message`, message =>{
-    if(message.content.startsWith(prefix + "patch")) {	
+    if(message.content.startsWith(prefix + "patch")) {
+        message.delete()
         if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return message.channel.send("Vous n'avez pas accès à cette commande, seul les administrateur on accès à cette commande!");
      const embed = new Discord.RichEmbed()		
      .setColor(0x954D23)		
@@ -25,6 +26,8 @@ client.on(`message`, message =>{
      .addField("mention","@Notife")
      message.channel.send({embed})
     message.channel.send(`${message.mentions.roles.first()}`)
+     .then(async function (message) {
+await message.react("✅")
     }
 
 });
