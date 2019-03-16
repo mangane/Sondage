@@ -24,7 +24,7 @@ client.on(`message`, message =>{
      .addField("Mise à jour du 15/03/19","deux commandes ont été rajouter, la commande &sondage, la commande &say")
      .addField("mention",`${message.mentions.roles.first()}`);
      message.channel.send({embed})
-    message.channel.send(`${message.mentions.roles.first()}`)
+     message.channel.send(`${message.mentions.roles.first()}`);
     }
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN)
