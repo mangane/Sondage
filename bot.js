@@ -21,7 +21,7 @@ if(message.content.startsWith(prefix + "kick")) {
         const member = message.mentions.members.first();
         message.channel.send(`${message.mentions.users.first()} à été Kické par ${message.author.username}`);
         member.kick();
-});
+}
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN)
