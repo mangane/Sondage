@@ -31,6 +31,6 @@ if(message.content.startsWith(prefix + "ban")) {
         message.channel.send(`${message.mentions.users.first()} à été banni par ${message.author.username}`);
         member.ban(); 
 }
-    
+   }); 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN)
