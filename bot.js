@@ -15,6 +15,6 @@ client.user.setActivity(`La Nation Bot`);
 });
 
 
-});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN)
