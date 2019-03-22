@@ -21,6 +21,7 @@ if(message.content.startsWith(prefix + "help")) {
                 .setTitle(":scroll: Liste des commandes ::scroll: ")
                 .addField("&user","vous permet de voir les commandes utilisateurs")
                 .addField("&modo","Vous permet de voir les commandes de moderation")
+                .addTitle("test")
                 .addField("&admin","Vous permet de voir les commandes des modérateur du bot")
                 .setFooter("OverBot crée par ⏳Gaétan#2852");
                 message.channel.send({embed})
