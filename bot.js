@@ -62,6 +62,7 @@ if(message.content.startsWith(prefix + `user`)) {
                  .addField("&patch","Permet de voir les patch ou le mise à jours du bot réservé au modérateur du bot")          
                  .setFooter("OverBot crée par ⏳Gaétan#2852");
                  message.channel.send({embed})
+     }
 });            
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN)
