@@ -13,7 +13,7 @@ client.on("ready", () => {
 console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
 client.user.setActivity(`La Nation Bot`);
 });
-} else if (message.content.startsWith(prefix + "help")) {
+if(message.content.startsWith(prefix + "help")) {
             message.delete()
             const embed = new Discord.RichEmbed()
                 .setColor(0x954D23)
