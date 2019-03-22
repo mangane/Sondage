@@ -58,8 +58,7 @@ if(message.content.startsWith(prefix + `user`)) {
                 .setColor(0x954D23)
                  .setDescription(":oncoming_police_car:  Les commandes des modérateurs du bot :oncoming_police_car:  :")
                  .addField("&quit","Commande qui fait partir le bot du serveur d'ou l& commande est exécuter en cas de soucis réservé au modérateur du bot")
-                 .addField("&patch","Permet de voir les patch ou le mise à jours du bot réservé au modérateur du bot")
-                 
+                 .addField("&patch","Permet de voir les patch ou le mise à jours du bot réservé au modérateur du bot")          
                  .setFooter("OverBot crée par ⏳Gaétan#2852");
                  message.channel.send({embed})
                  }
