@@ -62,6 +62,5 @@ if(message.content.startsWith(prefix + `user`)) {
                  .setFooter("OverBot crée par ⏳Gaétan#2852");
                  message.channel.send({embed})
                  }
-   }); 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN)
