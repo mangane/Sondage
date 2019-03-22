@@ -49,7 +49,7 @@ if(message.content.startsWith(prefix + `user`)) {
                 .addField("&mute [Mention]", "Permer d'interdire à un membre de parler")
         .addField("&embed","Vous permet de faire parler le bot en Embed")
                 .addField("&unmute[Mention]", "Retire l'interdiction de parler")
-                .addField("&kick [Mention]","Exclure un membre du serveur")
+                .addField("&kick [Mention]","Exclure un membre du serveur");
                 message.channel.send({embed})
                 }
  if(message.content.startsWith(prefix + `admin`)) {
