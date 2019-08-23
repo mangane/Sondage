@@ -243,7 +243,7 @@ client.on("message", async message => {
    "bite",
    //"ect.."
 ];
-  if (banni.some(x => message.content.toLowerCase().split ().includes(x))) {
+  if (banni.some(x => message.content.toLowerCase().split ().includes())) {
     message.reply("Message supprimé !\n :warning: Langage Trop Familier !")
     message.delete(message.author)
   }

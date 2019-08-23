@@ -1,4 +1,4 @@
-const CLEAR_MESSAGES = '!clearMessages';
+  const CLEAR_MESSAGES = '!clearMessages';
 const Discord = require('discord.js');
 let client = new Discord.Client();
 var prefix = "g!";
@@ -9,7 +9,10 @@ if (message.content === prefix + "new") {
         let role = message.guild.roles.find('name', "@Support")
         let role2 = message.guild.roles.find('name', "@Mods")
         let role3 = message.guild.roles.find('name', "@Admin")
-      if (message.channel.id === "614211761461133342") {
+        let channel = message.guild.channels.find('name',"ticket")
+        
+      if (message.channel.id === "605798783753912323") {
+        
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username)
             .setColor("RANDOM")
@@ -39,6 +42,7 @@ if (message.content === prefix + "new") {
             .setDescription("Aide nous à améliore notre discord")
         message.guild.createChannel("Ticket-" + message.author.username, "text")
             .then(c => {
+         c.setParent('614457251641425934')
                 c.overwritePermissions(message.author, {
                     VIEW_CHANNEL: true,
                     SEND_MESSAGES: true,
@@ -70,7 +74,6 @@ if (message.content === prefix + "new") {
                 c.overwritePermissions(message.guild.id, {
                     VIEW_CHANNEL: false
                 })
-               
                 c.send(message.author, embed).then(async data => {
                 data.react("💸")
                 await data.react("🏪")
@@ -105,11 +108,11 @@ if (message.content === prefix + "new") {
                         })
                     })
             })
-          
         })
     } else {
       message.channel.send("Merci d'utiliser cette commande dans <#614211761461133342>")
     }}
+   
     if (message.content === prefix + "close") {
         if (message.channel.name.startsWith("ticket-")) {
             message.channel.delete()
@@ -118,4 +121,4 @@ if (message.content === prefix + "new") {
         }
     }
 })
-client.login("NTE1NTYzMjkyNDI1NDUzNTg4.XV8MKw.6MRzpPNFKicg48kQ2TtrPh4N5rA")
+client.login("NTE1NTYzMjkyNDI1NDUzNTg4.XV_ncw.YkNq7qI2yaLtL8BvHdmSxhc1xiM")
